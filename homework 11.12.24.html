@@ -1,0 +1,19 @@
+<html>
+    <head>
+         <title>comic book</title>  
+         <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>   
+            <script src="page-controls.js"></script>
+        </head>
+        <body>
+            <a-scene backgrounds="color: #d471aa">
+                <a-camera wasd-controls-enabled="false"></a-camera>
+                <a-assets>
+                    <img id="titlepage" src="imagess/supermantitle.jpeg">
+                    <img id="page1" src="imagess/page1.jpg">
+                    <img id="page2" src="imagess/page2.jpeg">
+                    <img id="page3" src="imagess/page3.jepg.jpg">
+                </a-assets>
+                <a-entity layer="src: #page1; height: 3; width: 1.9505" page-controls></a-entity>
+            </a-scene>
+        </body>
+</html>
